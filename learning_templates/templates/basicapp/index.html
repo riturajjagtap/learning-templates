@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'basicapp/base.html' %}
+{% load my_extras %}
+{% block body_block %}
+  <h1>Welcome to index page</h1>
+  <h2>This is index.html page showing</h2>
+    <h1>{{ text | upper }}</h1>
+    <h1>{{ num | add:"2" }}</h1>
+    <h1>{{ my_date|date:"m-d-Y" }}</h1> <!-- Didn't work :( -->
+    <h1>{{ text | cutter:"so" }}</h1>
+{% endblock %}
